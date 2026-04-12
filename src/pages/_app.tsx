@@ -1,11 +1,17 @@
 import type { AppProps } from "next/app";
 import { Toaster } from "@/components/ui/sonner";
-import React from "react";
-import "../styles/global.scss";
+import React, { useEffect, useRef } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+// import "./_globals.scss";
+import "@/styles/main.scss";
 import Head from "next/head";
 import Layout from "@/components/layout";
+import useThemeScripts from "@/hooks/useThemeScripts";
+// in layout.tsx or _app.tsx
+import 'animate.css';
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
+  useThemeScripts();
   return (
     <>
       <Head>

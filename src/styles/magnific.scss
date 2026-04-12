@@ -1,0 +1,197 @@
+/************************************/
+/**** Magnific Popup SCSS        ****/
+/************************************/
+
+.mfp {
+    &-bg {
+        position: fixed;
+        inset: 0;
+        z-index: 1042;
+        background: #0b0b0b;
+        opacity: 0.8;
+        overflow: hidden;
+    }
+
+    &-wrap {
+        position: fixed;
+        inset: 0;
+        z-index: 1043;
+        outline: none !important;
+        -webkit-backface-visibility: hidden;
+    }
+
+    &-container {
+        position: absolute;
+        inset: 0;
+        text-align: center;
+        padding: 0 8px;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+    }
+
+    &-content {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1045;
+    }
+
+    &-hide {
+        display: none !important;
+    }
+
+    &-preloader {
+        position: absolute;
+        top: 50%;
+        left: 8px;
+        right: 8px;
+        text-align: center;
+        color: #ccc;
+
+        a {
+            color: #ccc;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    &-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 44px;
+        height: 44px;
+        font-size: 28px;
+        color: #fff;
+        opacity: 0.65;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &-arrow {
+        position: absolute;
+        top: 50%;
+        width: 90px;
+        height: 110px;
+        opacity: 0.65;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            border: transparent solid;
+        }
+
+        &-left {
+            left: 0;
+
+            &::after {
+                border-right: 17px solid #fff;
+            }
+        }
+
+        &-right {
+            right: 0;
+
+            &::after {
+                border-left: 17px solid #fff;
+            }
+        }
+    }
+
+    &-iframe-holder {
+        padding: 40px 0;
+
+        .mfp-content {
+            max-width: 900px;
+        }
+    }
+
+    &-figure {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 40px 0;
+            background: #444;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+        }
+
+        small {
+            color: #bdbdbd;
+            font-size: 12px;
+        }
+    }
+
+    &-bottom-bar {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+    }
+
+    &-title {
+        color: #f3f3f3;
+        padding-right: 36px;
+    }
+}
+
+/* Image */
+img.mfp-img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    padding: 40px 0;
+}
+
+/************************************/
+/**** Responsive                ****/
+/************************************/
+
+@media (max-width: 800px) {
+    .mfp-img-mobile {
+        .mfp-image-holder {
+            padding: 0;
+        }
+
+        img.mfp-img {
+            padding: 0;
+        }
+
+        .mfp-bottom-bar {
+            position: fixed;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .mfp-close {
+            width: 35px;
+            height: 35px;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .mfp-arrow {
+        transform: scale(0.75);
+    }
+
+    .mfp-container {
+        padding: 0 6px;
+    }
+}

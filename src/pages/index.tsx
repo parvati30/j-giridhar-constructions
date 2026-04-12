@@ -1,7 +1,8 @@
+import Home from "@/module/home";
 import React from "react";
 
 function HomePage() {
-  return <div>Home</div>;
+  return <Home />;
 }
 
 export default HomePage;
