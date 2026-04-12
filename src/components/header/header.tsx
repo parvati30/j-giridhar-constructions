@@ -11,7 +11,7 @@ const Header = () => {
 
                         {/* Logo */}
                         <Link href="/" className="navbar-brand">
-                            <Image src="/images/logo.svg" alt="Logo" width={120} height={40} />
+                            <Image src="/images/logo.png" alt="Logo" width={250} height={70} />
                         </Link>
 
                         {/* Menu */}

@@ -1677,7 +1677,7 @@
     }
 }
 
-//file 4
+//file 4 plans
 .apartments-plans-moon {
     padding: 100px 0;
 }
@@ -1782,5 +1782,305 @@
                 color: $text-color;
             }
         }
+    }
+}
+
+//file5 chooseUs
+
+.why-choose-us-moon {
+    padding: 100px 0;
+
+    .why-choose-image-moon {
+        text-align: center;
+
+        figure {
+            display: block;
+            backdrop-filter: blur(30px);
+            border-radius: 50%;
+
+        }
+
+        img {
+            width: 100%;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            object-fit: cover;
+            max-height: fit-content;
+        }
+    }
+
+    .why-choose-content-moon {
+        .why-choose-header-moon {
+            p {
+                color: $white-color;
+                // margin-top: 20px;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .why-choose-body-moon {
+            margin-top: 40px;
+
+            .why-choose-counter-list-moon {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                border-bottom: 1px solid $dark-divider-color;
+                margin-bottom: 40px;
+                padding-bottom: 40px;
+
+                .why-choose-counter-item-moon {
+                    width: calc(50% - 15px);
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 15px;
+
+                    .icon-box {
+                        position: relative;
+                        width: 50px;
+                        height: 50px;
+                        background: var(--accent-color);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        overflow: hidden;
+
+                        img {
+                            position: relative;
+                            width: 100%;
+                            max-width: 24px;
+                            z-index: 1;
+                            transition: all 0.4s ease-in-out;
+                        }
+                    }
+
+                    .icon-box::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: $white-color;
+                        border-radius: 100px;
+                        transform: scale(0);
+                        width: 100%;
+                        height: 100%;
+                        transition: all 0.4s ease-in-out;
+                        z-index: 0;
+                    }
+
+                    .why-choose-counter-item-content-moon {
+                        width: calc(100% - 65px);
+
+                        h2 {
+                            font-size: 40px;
+                            color: $white-color;
+                            font-weight: 500;
+                        }
+
+                        p {
+                            color: $white-color;
+                            margin: 10px 0 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .why-choose-footer-moon {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px 40px;
+            border-top: 1px solid $dark-divider-color;
+            margin-top: 40px;
+            padding-top: 40px;
+
+            .about-us-contact-box-moon {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 15px;
+
+                .icon-box {
+                    position: relative;
+                    background: $accent-color;
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .about-us-conatct-content-moon {
+                h3 {
+                    font-size: 20px;
+                    color: $white-color;
+                }
+
+                p,
+                a {
+                    color: $white-color;
+                    margin: 5px 0 0;
+
+
+                    a:hover {
+                        color: $accent-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//file6 our projects
+.our-projects {
+    padding: 100px 0;
+
+    .project-item {
+        position: relative;
+        height: calc(100% - 30px);
+        margin-bottom: 30px;
+
+        &:hover {
+            .project-item-image {
+                img {
+                    transform: scale(1.06);
+                }
+            }
+
+            .project-item-btn {
+                transform: scale(1);
+            }
+
+            .project-item-content {
+                bottom: 15px;
+            }
+        }
+    }
+
+    .project-item-image {
+
+        a,
+        figure {
+            position: relative;
+            display: block;
+            border-radius: 20px;
+            overflow: hidden;
+            cursor: none;
+        }
+
+        img {
+            min-height: fit-content;
+            width: 100%;
+            aspect-ratio: 1 / 1.247;
+            object-fit: cover;
+            transition: all 0.6s ease-in-out;
+        }
+    }
+
+    .project-item-btn {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        transform: scale(0);
+        transition: all 0.4s ease-in-out;
+        z-index: 1;
+
+        a {
+            width: 50px;
+            height: 50px;
+            background: $accent-color;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                background: $primary-color;
+            }
+
+            img {
+                width: 100%;
+                max-width: 14px;
+                transition: all 0.3s ease-in-out;
+            }
+
+            &:hover {
+                img {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+
+    .project-item-content {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        right: 10px;
+        background: $dark-divider-color;
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+        border-radius: 20px;
+        padding: 20px 25px;
+        transition: all 0.4s ease-in-out;
+        z-index: 1;
+
+        h2 {
+            font-size: 20px;
+            line-height: 1.4em;
+            color: $white-color;
+
+            a {
+                color: inherit;
+            }
+        }
+
+        p {
+            color: $white-color;
+            margin: 5px 0 0;
+
+            a {
+                color: inherit;
+            }
+        }
+    }
+
+    .satisfy-client-image {
+
+        img {
+            max-width: 30px !important;
+            max-height: 32px !important;
+        }
+
+        .image-anime:after {
+            content: "";
+            position: absolute;
+            width: 200%;
+            height: 0%;
+            left: 50%;
+            top: 50%;
+            background-color: rgba(255, 255, 255, .3);
+            transform: translate(-50%, -50%) rotate(-45deg);
+            z-index: 1;
+        }
+
+    }
+
+}
+
+
+@media only screen and (max-width: 1850px) {
+    .bg-section {
+        width: calc(100% - 30px);
     }
 }
