@@ -2078,6 +2078,168 @@
 
 }
 
+//file7 what we do
+.what-we-do-moon {
+    background-image: url('../../../public/images/section-bg-image-1.png');
+    background-position: top -80px right -80px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 100px 0;
+    background-color: #FFFFFF;
+
+    .what-we-do-content-moon {
+        .what-we-list-moon {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    width: calc(50% - 10px);
+                    position: relative;
+                    color: $primary-color;
+                    line-height: 1.5em;
+                    padding-left: 25px;
+
+                    &::before {
+                        content: '\f058';
+                        position: absolute;
+                        font-family: 'Font Awesome 7 Free';
+                        font-size: 18px;
+                        font-weight: 900;
+                        color: $accent-color;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+        }
+
+        .what-we-footer-moon {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px 40px;
+            border-top: 1px solid $divider-color;
+            margin-top: 40px;
+            padding-top: 40px;
+
+            .about-us-contact-box-moon {
+                .icon-box {
+                    &::before {
+                        background: $primary-color;
+                    }
+                }
+
+                &:hover {
+                    .icon-box {
+                        img {
+                            filter: none;
+                        }
+                    }
+                }
+            }
+
+            .about-us-contact-box-moon {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 15px;
+                margin: 0;
+
+                .icon-box {
+                    position: relative;
+                    background: $accent-color;
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .about-us-conatct-content-moon {
+                h3 {
+                    color: $primary-color;
+                }
+
+                p,
+                a {
+                    color: $text-color;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .what-we-image-box {
+        position: relative;
+        margin-left: 20px;
+        padding: 0 35px 35px 70px;
+
+        &:before {
+            position: absolute;
+            content: '';
+            right: 0;
+            bottom: 0;
+            width: 310px;
+            height: 372px;
+            background-color: $accent-color;
+            border-radius: 20px;
+        }
+
+        .what-we-image-moon {
+            figure {
+                display: block;
+                border-radius: 20px;
+            }
+
+            img {
+                width: 100%;
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+        }
+
+        .contact-us-circle-moon {
+            position: absolute;
+            top: 0;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+
+            a {
+                display: inline-block;
+                border-radius: 50%;
+                border: 5px solid $bg-color;
+            }
+
+            img {
+                width: 100%;
+                max-width: 140px;
+                border-radius: 50%;
+                animation: infiniterotate 20s infinite linear;
+
+                &:hover {
+                    animation-play-state: paused;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 1850px) {
     .bg-section {

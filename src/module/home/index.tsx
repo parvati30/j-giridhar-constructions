@@ -10,6 +10,7 @@ import HomePlans from "./plans";
 import HomeChooseUs from "./chooseUs";
 import HomeHero from "./hero";
 import HomeProjects from "./projects";
+import WhatWeDo from "./whatWeDo";
 
 const Home = () => {
     useEffect(() => {
@@ -32,6 +33,7 @@ const Home = () => {
             <HomePlans />
             <HomeChooseUs />
             <HomeProjects />
+            <WhatWeDo />
 
         </>
     );
