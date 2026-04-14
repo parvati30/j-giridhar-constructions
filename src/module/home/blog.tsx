@@ -43,17 +43,13 @@ const OurBlog = () => {
                             <div className="post-item-body">
 
                                 <div className="post-item-meta">
-                                    <ul>
-                                        <li>
-                                            <Image
-                                                src="/images/icon-calendar.svg"
-                                                alt=""
-                                                width={16}
-                                                height={16}
-                                            />
-                                            06 Jan, 2026
-                                        </li>
-                                    </ul>
+                                    <Image
+                                        src="/images/icon-calendar.svg"
+                                        alt=""
+                                        width={16}
+                                        height={16}
+                                    />
+                                    <span>06 Jan, 2026</span>
                                 </div>
 
                                 <div className="post-item-content">
@@ -98,17 +94,15 @@ const OurBlog = () => {
                             <div className="post-item-body">
 
                                 <div className="post-item-meta">
-                                    <ul>
-                                        <li>
-                                            <Image
-                                                src="/images/icon-calendar.svg"
-                                                alt=""
-                                                width={16}
-                                                height={16}
-                                            />
-                                            05 Jan, 2026
-                                        </li>
-                                    </ul>
+
+                                    <Image
+                                        src="/images/icon-calendar.svg"
+                                        alt=""
+                                        width={16}
+                                        height={16}
+                                    />
+                                    <span>05 Jan, 2026</span>
+
                                 </div>
 
                                 <div className="post-item-content">
@@ -153,17 +147,15 @@ const OurBlog = () => {
                             <div className="post-item-body">
 
                                 <div className="post-item-meta">
-                                    <ul>
-                                        <li>
-                                            <Image
-                                                src="/images/icon-calendar.svg"
-                                                alt=""
-                                                width={16}
-                                                height={16}
-                                            />
-                                            04 Jan, 2026
-                                        </li>
-                                    </ul>
+
+                                    <Image
+                                        src="/images/icon-calendar.svg"
+                                        alt=""
+                                        width={16}
+                                        height={16}
+                                    />
+                                    <span>04 Jan, 2026</span>
+
                                 </div>
 
                                 <div className="post-item-content">

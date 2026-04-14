@@ -41,9 +41,9 @@ const Home = () => {
             <WhatWeDo />
             <OurFaqs />
             <OurTestimonials />
-            {/* <OurBlog />
+            <OurBlog />
             <Gallery />
-            <Footer /> */}
+            {/* <Footer /> */}
 
         </>
     );
