@@ -11,6 +11,11 @@ import HomeChooseUs from "./chooseUs";
 import HomeHero from "./hero";
 import HomeProjects from "./projects";
 import WhatWeDo from "./whatWeDo";
+import OurFaqs from "./ourFaqs";
+import OurBlog from "./blog";
+import Gallery from "./gallery";
+import Footer from "./footer";
+import OurTestimonials from "./testimonials";
 
 const Home = () => {
     useEffect(() => {
@@ -34,6 +39,11 @@ const Home = () => {
             <HomeChooseUs />
             <HomeProjects />
             <WhatWeDo />
+            <OurFaqs />
+            <OurTestimonials />
+            {/* <OurBlog />
+            <Gallery />
+            <Footer /> */}
 
         </>
     );

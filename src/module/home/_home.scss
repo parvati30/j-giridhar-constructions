@@ -846,7 +846,7 @@
         }
 
         img {
-            width: 100%;
+            width: auto;
             max-width: 50px;
             border-radius: 50%;
         }
@@ -961,347 +961,11 @@
     }
 }
 
-/************************************/
-/**** Why Choose Section         ****/
-/************************************/
 
-.why-choose-us-moon {
-    padding: 100px 0;
-}
 
-.why-choose-image-moon {
-    text-align: center;
-
-    figure {
-        backdrop-filter: blur(30px);
-        border-radius: 50%;
-    }
-
-    img {
-        width: 100%;
-        aspect-ratio: 1;
-        border-radius: 50%;
-    }
-}
-
-.why-choose-header-moon {
-    p {
-        color: $white-color;
-        margin-top: 20px;
-
-        &:first-child {
-            margin-top: 0;
-        }
-    }
-}
-
-.why-choose-body-moon {
-    margin-top: 40px;
-}
-
-.why-choose-counter-list-moon {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    border-bottom: 1px solid $dark-divider-color;
-    margin-bottom: 40px;
-    padding-bottom: 40px;
-
-    &:last-child {
-        border: none;
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
-}
-
-.why-choose-counter-item-moon {
-    width: calc(50% - 15px);
-    display: flex;
-    gap: 15px;
-
-    .icon-box {
-        width: 50px;
-        height: 50px;
-        background: $accent-color;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        position: relative;
-
-        &::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: $white-color;
-            transform: scale(0);
-            transition: 0.4s;
-        }
-
-        img {
-            max-width: 24px;
-            position: relative;
-            z-index: 1;
-        }
-    }
-
-    &:hover {
-        .icon-box::before {
-            transform: scale(1);
-        }
-
-        .icon-box img {
-            filter: brightness(0);
-        }
-    }
-
-    &-content-moon {
-        width: calc(100% - 65px);
-
-        h2 {
-            font-size: 40px;
-            color: $white-color;
-        }
-
-        p {
-            color: $white-color;
-            margin-top: 10px;
-        }
-    }
-}
-
-/************************************/
-/**** What We Do Section         ****/
-/************************************/
-
-.what-we-do-moon {
-    background: url("/images/section-bg-image-1.png") no-repeat top -80px right -80px;
-    padding: 100px 0;
-}
-
-.what-we-list-moon {
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-
-        li {
-            width: calc(50% - 10px);
-            padding-left: 25px;
-            position: relative;
-
-            &::before {
-                content: "\f058";
-                font-family: "Font Awesome 7 Free";
-                color: $accent-color;
-                position: absolute;
-                left: 0;
-            }
-        }
-    }
-}
-
-.what-we-footer-moon {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px 40px;
-    border-top: 1px solid $divider-color;
-    margin-top: 40px;
-    padding-top: 40px;
-}
-
-/************************************/
-/**** FAQ Section               ****/
-/************************************/
-
-.our-faqs-moon {
-    padding: 100px 0;
-}
-
-.faqs-content-moon {
-    position: sticky;
-    top: 30px;
-}
-
-.faqs-cta-box-moon {
-    max-width: 450px;
-    position: relative;
-
-    img {
-        width: 100%;
-        aspect-ratio: 1 / 0.626;
-        border-radius: 20px;
-    }
-}
-
-.faq-accordion-moon {
-    .accordion-item {
-        background: $white-color;
-        border-radius: 20px;
-        margin-bottom: 25px;
-        overflow: hidden;
-
-        .accordion-button {
-            font-size: 20px;
-            padding: 20px 55px 20px 30px;
-
-            &::after {
-                content: "+";
-                position: absolute;
-                right: 30px;
-            }
-        }
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-
-        .accordion-body {
-            border-top: 1px solid $divider-color;
-            padding: 20px 30px;
-        }
-    }
-}
 
 //new file2
 
-/************************************/
-/**** Testimonials Section        ****/
-/************************************/
-
-.our-testimonials-moon {
-    position: relative;
-    padding: 100px 0;
-    background: url("/images/testimonial-bg-image-moon.jpg") center/cover no-repeat;
-    overflow: hidden;
-
-    &::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: $primary-color;
-        opacity: 0.8;
-        z-index: 1;
-    }
-
-    .container {
-        position: relative;
-        z-index: 2;
-    }
-
-    .section-footer-text {
-        margin-top: 60px;
-    }
-}
-
-/* Slider */
-.testimonial-slider-moon {
-    .swiper-wrapper {
-        cursor: none;
-
-        .swiper-slide.swiper-slide-next {
-            .testimonial-item-moon {
-                transform: scale(1);
-            }
-        }
-    }
-}
-
-/* Item */
-.testimonial-item-moon {
-    background: $dark-divider-color;
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    padding: 30px;
-    text-align: center;
-    transform: scale(0.95);
-    transition: 0.6s;
-
-    &-quotes-moon {
-        margin-bottom: 30px;
-
-        img {
-            max-width: 60px;
-        }
-    }
-
-    &-content-moon p {
-        font-size: 18px;
-        font-weight: 500;
-        color: $white-color;
-    }
-
-    &-author-moon {
-        margin-top: 30px;
-    }
-}
-
-.testimonial-author-content-moon {
-    h2 {
-        font-size: 20px;
-        color: $white-color;
-    }
-
-    p {
-        color: $white-color;
-        margin-top: 10px;
-    }
-}
-
-.testimonial-author-image-moon {
-    margin-top: 20px;
-
-    img {
-        max-width: 60px;
-        border-radius: 50%;
-    }
-}
-
-/************************************/
-/**** Footer Section              ****/
-/************************************/
-
-.footer-gallery-moon {
-    margin-bottom: 20px;
-
-    &-list-moon {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-
-        .photo-gallery {
-            width: calc(16.66% - 16px);
-
-            a {
-                cursor: none;
-            }
-
-            img {
-                width: 100%;
-                aspect-ratio: 1;
-                border-radius: 20px;
-            }
-        }
-    }
-}
-
-.main-footer-moon {
-    padding: 100px 0 0;
-    margin-bottom: 20px;
-}
-
-/* Header */
-.footer-header-moon {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid $dark-divider-color;
-    margin-bottom: 60px;
-    padding-bottom: 60px;
-
-    .section-title {
-        max-width: 850px;
-    }
-}
 
 /* CTA */
 .lets-talk-btn-moon a {
@@ -1613,13 +1277,21 @@
     /******** Testimonials ********/
     .testimonial-item-quotes-moon {
         margin-bottom: 15px;
+        color: $white-color;
     }
 
-    .testimonial-item-content-moon p {
-        font-size: 16px;
+    .testimonial-item-content-moon {
+
+
+        p {
+            font-size: 16px;
+
+        }
     }
 
     .testimonial-author-content-moon {
+
+        // color: $white-color;
         h2 {
             font-size: 18px;
         }
@@ -1740,7 +1412,7 @@
         h3 {
             font-weight: 500;
             line-height: 1.2em;
-            color: var(--primary-color);
+            color: $primary-color;
             margin: 0;
         }
     }
@@ -1842,7 +1514,7 @@
                         position: relative;
                         width: 50px;
                         height: 50px;
-                        background: var(--accent-color);
+                        background: $accent-color;
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -2233,10 +1905,279 @@
     }
 }
 
+//file8 faqs
+/* ================= FAQ SECTION ================= */
+.our-faqs-moon {
+    padding: 100px 0;
+
+    .faqs-content-moon {
+        position: sticky;
+        top: 30px;
+        margin-right: 15px;
+    }
+
+    .faqs-cta-box-moon {
+        position: relative;
+        max-width: 450px;
+
+        .faqs-cta-box-img-moon {
+            figure {
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px;
+                    background: linear-gradient(180deg,
+                            transparent 50.16%,
+                            $primary-color 100%);
+                }
+            }
+
+            img {
+                width: 100%;
+                aspect-ratio: 1 / 0.626;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+        }
+
+        .about-us-contact-box-moon {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            z-index: 2;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 15px;
+            margin: 0;
+
+            .icon-box {
+                position: relative;
+                background: $accent-color;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+        }
 
 
 
 
+        .about-us-conatct-content-moon {
+            h3 {
+                color: $white-color;
+                font-size: 20px;
+                line-height: normal;
+            }
+
+            p,
+            a {
+                color: $white-color;
+                margin: 5px 0 0;
+            }
+        }
+    }
+
+    /* ================= ACCORDION ================= */
+    .faq-accordion-moon {
+
+        // background-color: red;
+        .accordion-item {
+            background: $white-color;
+            border: none;
+            border-radius: 20px;
+            margin-bottom: 25px;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            .accordion-header {
+                .accordion-button {
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 1.4em;
+                    color: $primary-color;
+                    padding: 20px 55px 20px 30px;
+                    transition: all 0.3s ease-in-out;
+                    position: relative;
+
+                    &::after {
+                        content: "\2b";
+                        font-family: "FontAwesome";
+                        position: absolute;
+                        right: 30px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        font-size: 20px;
+                        color: $primary-color;
+                        transition: all 0.4s ease-in-out;
+                    }
+
+                    &.collapsed::after {
+                        content: "\2b";
+                    }
+
+                    &:not(.collapsed)::after {
+                        content: "\f068";
+                    }
+                }
+            }
+
+            .accordion-body {
+                border-top: 1px solid $divider-color;
+                padding: 20px 30px;
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+//file9 testimonials
+/* ================= TESTIMONIAL SECTION ================= */
+.our-testimonials-moon {
+    position: relative;
+    padding: 100px 0;
+    background-image: url("../../../public/images/testimonial-bg-image-moon.jpg");
+    background-position: center center;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: $primary-color;
+        opacity: 80%;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .section-footer-text {
+        margin-top: 60px;
+    }
+
+    /* ================= SLIDER ================= */
+    .testimonial-slider-moon {
+        .swiper-wrapper {
+            cursor: none;
+
+            .swiper-slide {
+                &.swiper-slide-next {
+                    .testimonial-item-moon {
+                        transform: scale(1);
+                    }
+                }
+            }
+        }
+    }
+
+    /* ================= CARD ================= */
+    .testimonial-item-moon {
+        background-color: $dark-divider-color;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 30px;
+        text-align: center;
+        transform: scale(0.95);
+        transition: all 0.6s ease-in-out;
+
+        .testimonial-item-quotes-moon {
+            margin-bottom: 30px;
+
+            img {
+                width: 100%;
+                max-width: 60px;
+            }
+        }
+
+        .testimonial-item-content-moon {
+            p {
+                font-size: 18px;
+                font-weight: 500;
+                color: $white-color;
+                margin: 0;
+            }
+        }
+
+        .testimonial-item-author-moon {
+            margin-top: 30px;
+
+            .testimonial-author-content-moon {
+                h2 {
+                    font-size: 20px;
+                    color: $white-color;
+                }
+
+                p {
+                    color: $white-color;
+                    margin: 10px 0 0;
+                }
+            }
+
+            .testimonial-author-image-moon {
+                margin-top: 20px;
+
+                figure {
+                    display: block;
+                    max-width: 60px;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                }
+
+                img {
+                    width: 100%;
+                    max-width: 60px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #fff !important;
+}
+
+/* bullets */
+.swiper-pagination-bullet {
+    background: #fff !important;
+    opacity: 0.5;
+}
+
+/* active bullet */
+.swiper-pagination-bullet-active {
+    background: #fff !important;
+    opacity: 1;
+}
 
 
 
