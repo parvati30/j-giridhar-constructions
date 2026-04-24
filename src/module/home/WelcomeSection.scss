@@ -1,0 +1,38 @@
+@use "../../styles/variables" as *;
+
+.welcome-section {
+    padding: 42px 0 20px;
+
+    .welcome-title {
+        margin: 0 0 26px;
+        text-align: center;
+        font-size: 26px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .welcome-grid {
+        display: flex;
+        gap: 80px;
+        margin-top: 50px;
+        ;
+    }
+
+    .welcome-content {
+        p {
+            margin: 0 0 14px;
+            font-size: 17px;
+            line-height: 1.8;
+            color: $text-color;
+        }
+    }
+
+    .welcome-video {
+        width: 100%;
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+}

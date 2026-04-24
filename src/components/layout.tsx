@@ -6,6 +6,7 @@ import Header from "./header/header";
 import { Inter_Tight } from "next/font/google";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import CustomCursor from "@/components/CustomCursor";
+import Footer from "./footer/footer";
 
 const interTight = Inter_Tight({
     subsets: ["latin"],
@@ -26,6 +27,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <Header />
 
             {children}
+            <Footer />
         </div>
 
     );

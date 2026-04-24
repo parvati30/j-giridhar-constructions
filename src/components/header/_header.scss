@@ -1,22 +1,18 @@
 @use "../../styles/variables" as *;
 
-/************************************/
-/****       03. Header css       ****/
-/************************************/
 
 
 header.main-header {
+    background-color: black;
     position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
+    width: 100%;
     border-bottom: 1px solid $dark-divider-color;
-    z-index: 100;
+    z-index: 10;
 
     .header-sticky {
         position: relative;
         top: 0;
-        z-index: 100;
+
 
         &.hide {
             transform: translateY(-100%);
@@ -29,7 +25,7 @@ header.main-header {
             left: 15px;
             right: 15px;
             transform: translateY(0);
-            background: $primary-color;
+            background: $nav-text-color;
             border-bottom: 1px solid $dark-divider-color;
             border-radius: 0 0 20px 20px;
         }
@@ -38,7 +34,6 @@ header.main-header {
 
 /* Navbar */
 .navbar {
-    padding: 30px 0;
     align-items: center;
 }
 
@@ -47,7 +42,7 @@ header.main-header {
     margin: 0;
 
     img {
-        border-radius: 10px;
+        border-radius: 50%;
     }
 }
 
@@ -120,8 +115,15 @@ header.main-header {
             &:hover>ul {
                 visibility: visible;
                 opacity: 1;
-                transform: scale(1, 1);
+                transform: scale(1);
                 padding: 5px 0;
+
+                z-index: 20;
+
+                box-shadow:
+                    -14px 14px 24px rgba(0, 0, 0, 0.18),
+                    -4px 4px 10px rgba(0, 0, 0, 0.10);
+
             }
 
             &.highlighted-menu {
@@ -138,18 +140,25 @@ header.main-header {
             margin: 0;
             list-style: none;
             width: 235px;
-            border-radius: 20px;
+            border-radius: 5px;
             position: absolute;
             left: 0;
             top: 100%;
-            background: $accent-color;
+            border: 1px solid $accent-color;
+            background: $secondary-color;
+            color: $nav-text-color;
             text-align: left;
             transition: all 0.3s ease-in-out;
+            // box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            z-index: 10;
 
             ul {
-                left: 100%;
-                top: 0;
-                text-align: left;
+                left: 95%;
+                /* overlap effect */
+                top: 10px;
+                z-index: 20;
+                // box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+                transform: translateX(-10px) scale(1);
             }
 
             li {
@@ -157,13 +166,13 @@ header.main-header {
                 padding: 0;
 
                 a {
-                    color: $white-color;
+                    color: $nav-text-color;
                     padding: 6px 20px !important;
                     transition: all 0.3s ease-in-out;
 
                     &:hover,
                     &:focus {
-                        color: $primary-color;
+                        color: $accent-color;
                         background-color: transparent;
                         padding: 6px 20px 6px 23px !important;
                     }
