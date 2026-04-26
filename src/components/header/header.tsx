@@ -9,15 +9,19 @@ const Header = () => {
         <header className="main-header">
             <div className="header-sticky">
                 <nav className="navbar navbar-expand-lg">
-                    <div className="container">
 
-                        {/* Logo */}
-                        <Link href="/" className="navbar-brand">
-                            <Image src="/images/logo.JPG" alt="Logo" width={70} height={70} />
-                        </Link>
+
+                    <div className="container">
+                        <div className="logo-wrapper">
+                            <Link href="/" className="navbar-brand">
+                                <Image src="/images/logo.JPG" alt="Logo" width={70} height={70} />
+                            </Link>
+                            <p>J. Giridhar Constructions</p>
+                        </div>
+
 
                         {/* Menu */}
-                        <div className="collapse navbar-collapse main-menu">
+                        <div className="header-collapse navbar-collapse main-menu">
                             <div className="nav-menu-wrapper">
                                 <ul className="navbar-nav mr-auto" id="menu">
                                     {renderMenu(menuConfig)}

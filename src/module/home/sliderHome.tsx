@@ -39,7 +39,7 @@ const SliderHome1 = () => {
 
             <div className="testimonial-slider-moon">
                 <Swiper
-                    navigation
+                    // navigation
                     pagination={{ type: "bullets", clickable: true }}
                     // autoplay={true}
                     loop={true}

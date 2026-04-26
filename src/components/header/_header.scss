@@ -12,7 +12,20 @@ header.main-header {
     .header-sticky {
         position: relative;
         top: 0;
+        // display: flex;
 
+        .logo-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            p {
+                color: $white-color;
+                font-size: 18px;
+                font-weight: 600;
+                margin: 0;
+            }
+        }
 
         &.hide {
             transform: translateY(-100%);
@@ -49,7 +62,7 @@ header.main-header {
 /* Menu */
 .main-menu {
     .nav-menu-wrapper {
-        flex: 1;
+
         text-align: center;
         margin: 0 1.042vw;
 
@@ -153,7 +166,7 @@ header.main-header {
             z-index: 10;
 
             ul {
-                left: 95%;
+                // left: 95%;
                 /* overlap effect */
                 top: 10px;
                 z-index: 20;
@@ -191,6 +204,11 @@ header.main-header {
 .responsive-menu {
     position: relative;
     top: 0;
+}
+
+.header-collapse {
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* Mobile Menu (slicknav) */
