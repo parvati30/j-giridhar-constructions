@@ -2,20 +2,21 @@ import WelcomeSection from "./WelcomeSection";
 import ServicesSection from "./service";
 import GalleryPolicySection from "./galleryPolicy";
 import ProjectsShowcase from "./projectShowCase";
-import SliderHome1 from "./sliderHome";
+import SliderHome from "./sliderHome";
 
 
 
 const Home = () => {
     return (
         <>
-            <SliderHome1 />
+            <SliderHome />
             <div className="bridge-roads-page">
                 <WelcomeSection />
                 <ServicesSection />
                 <GalleryPolicySection />
                 <ProjectsShowcase />
             </div>
+
         </>
     );
 }

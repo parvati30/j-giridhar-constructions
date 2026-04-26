@@ -1,4 +1,6 @@
+import ImagePreview from "@/components/imagePreview";
 import Image from "next/image";
+import { useState } from "react";
 
 const projectImages = [
     "/images/project.JPG",
@@ -13,6 +15,8 @@ const projectImages = [
 
 
 const ProjectsShowcase = () => {
+    const [showImage, setShowImage] = useState(false);
+    const [viewImage, setViewImage] = useState("");
     return (
         <>
             <section className="projects-section">
@@ -27,6 +31,7 @@ const ProjectsShowcase = () => {
                         {projectImages.map((image, index) => (
                             <div className="projects-showcase__card" key={index}>
                                 <Image
+                                    onClick={() => { setShowImage(true); setViewImage(image) }}
                                     src={image}
                                     alt={`Project ${index + 1}`}
                                     width={320}
@@ -38,6 +43,7 @@ const ProjectsShowcase = () => {
                     </div>
                 </div>
             </section>
+            {showImage && viewImage ? <ImagePreview setShowImage={setShowImage} viewImage={viewImage} /> : null}
         </>
     );
 };

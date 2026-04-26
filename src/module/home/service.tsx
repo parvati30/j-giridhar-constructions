@@ -5,37 +5,37 @@ const services = [
     {
         title: "Industrial",
         image: "/images/service.JPG",
-        text: "We are the best Contractor in Chennai",
+        text: "We are the best Contractor in Bangalore",
         link: "/industrial",
     },
     {
         title: "Commercial",
         image: "/images/service2.JPG",
-        text: "We are the best Contractor in Chennai",
+        text: "We are the best Contractor in Bangalore",
         link: "/commercial",
     },
     {
         title: "Residential",
         image: "/images/service.JPG",
-        text: "We are the best installation Workers in Chennai",
+        text: "We are the best installation Workers in Bangalore",
         link: "/residential",
     },
     {
         title: "Road Works",
         image: "/images/service2.JPG",
-        text: "We are the best Contractor in Chennai",
+        text: "We are the best Contractor in Bangalore",
         link: "/road-works",
     },
     {
         title: "RCC Works",
         image: "/images/service.JPG",
-        text: "We are the best installation Workers in Chennai",
+        text: "We are the best installation Workers in Bangalore",
         link: "/rcc-works",
     },
     {
         title: "Bitumen Works",
         image: "/images/service2.JPG",
-        text: "We are the best installation Workers in Chennai",
+        text: "We are the best installation Workers in Bangalore",
         link: "/bitumen-works",
     },
 ];

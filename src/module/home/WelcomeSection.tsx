@@ -10,23 +10,23 @@ const WelcomeSection = () => {
                 <div className="welcome-grid">
                     <div className="welcome-content">
                         <p>
-                            Bridge and roads established in 1999. We have built our reputation in Construction
-                            service with integrity of Safety &amp; Quality to our clients. Our commitment
-                            experience &amp; team work of our family is the key element for our Company’s
-                            success.
+                            Since 1999, J. Giridhar Constructions has built a strong reputation for
+                            delivering civil infrastructure with a focus on safety, quality, and client
+                            satisfaction. Our experienced team combines technical expertise with a
+                            commitment to integrity on every project.
                         </p>
                         <p>
-                            We are committed and give preference to our Ens Policy &amp; Quality Policy.
-                            Our Company follows all Safety &amp; Quality Standard during construction.
+                            We follow a strict Environment, Safety and Quality policy, and adhere to
+                            established industry standards throughout the construction process.
                         </p>
                         <p>
-                            Our pledge is to provide services in safety &amp; Quality to our clients.
-                            Company’s verticals of construction include Industrial, manufacturing, Commercial
-                            buildings, educational institutions, and residential buildings.
+                            Our pledge is to provide reliable, safe, and high-quality construction
+                            services across industrial, manufacturing, commercial, educational, and
+                            residential sectors.
                         </p>
                         <p>
-                            We have executed prestigious projects for major organizations, working with leading
-                            architects and consultants.
+                            We have successfully completed prestigious projects for major organizations,
+                            working alongside leading architects and consultants to exceed expectations.
                         </p>
                     </div>
 

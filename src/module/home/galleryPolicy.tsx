@@ -26,7 +26,7 @@ const GalleryPolicySection = () => {
                     <div className="policy-box">
                         <h3 className="policy-title">HSE Policy!!</h3>
                         <p className="policy-text">
-                            Bridge and Roads has adopted Health, Safety and Environmental Policy to establish,
+                            J. Giridhar Constructions has adopted Health, Safety and Environmental Policy to establish,
                             implement, promote and maintain an integrated management system in compliance with
                             requirements. HSE Policy starts and ends with the customer as focal point.
                         </p>

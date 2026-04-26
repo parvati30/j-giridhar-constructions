@@ -8,31 +8,31 @@ import "swiper/css/pagination";
 const testimonials = [
     {
         name: "Darlene Robertson",
-        role: "Clinical Coordinator",
+        role: "Road Project Coordinator",
         image: "/images/slider1.JPG",
-        text: "From the moment we moved in, everything felt perfect. The apartment design, amenities, and location truly exceeded our expectations.",
+        text: "From the moment the road work began, the team kept everything on schedule. The quality of the pavement, drainage, and safety measures exceeded our expectations.",
     },
     {
         name: "Anjali Sharma",
-        role: "Homeowner",
+        role: "Regional Site Manager",
         image: "/images/slider2.JPG",
-        text: "From the moment we moved in, everything felt perfect. The apartment design, amenities, and location truly exceeded our expectations.",
+        text: "The road construction process was seamless. The crew handled traffic management, material delivery, and final surfacing with professional care.",
     },
     {
         name: "Vikram Patel",
-        role: "Apartment Owner",
+        role: "Highway Engineer",
         image: "/images/slider3.JPG",
-        text: "From the moment we moved in, everything felt perfect. The apartment design, amenities, and location truly exceeded our expectations.",
+        text: "The road upgrade has improved travel times and safety. Excellent workmanship, precise grading, and durable asphalt made a big difference.",
     },
     {
         name: "Vikram Patel",
-        role: "Apartment Owner",
+        role: "Infrastructure Consultant",
         image: "/images/slider1.JPG",
-        text: "From the moment we moved in, everything felt perfect. The apartment design, amenities, and location truly exceeded our expectations.",
+        text: "The construction team delivered a reliable road solution on time. They maintained strong site coordination and ensured the finished roadway meets all standards.",
     },
 ];
 
-const SliderHome1 = () => {
+const SliderHome = () => {
     return (
         <div className="our-testimonials-moon bg-section dark-section parallaxie">
 
@@ -75,4 +75,4 @@ const SliderHome1 = () => {
         </div>
     )
 }
-export default SliderHome1;
+export default SliderHome;
